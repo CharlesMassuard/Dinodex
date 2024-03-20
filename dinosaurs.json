@@ -4,7 +4,7 @@
             "id": 1,
             "nom": "Raptor",
             "type": "Carnivore",
-            "tamable": true,
+            "tameable": true,
             "food": [1, 2, 3],
             "image": "raptor.jpg"
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "nom": "T-Rex",
             "type": "Carnivore",
-            "tamable": true,
+            "tameable": true,
             "food": [1, 2, 3],
             "image": "trex.jpg"
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "nom": "Stegosaurus",
             "type": "Herbivore",
-            "tamable": true,
+            "tameable": true,
             "food": [4, 5, 6],
             "image": "stegosaurus.jpg"
         },
@@ -28,7 +28,7 @@
             "id": 4,
             "nom": "Triceratops",
             "type": "Herbivore",
-            "tamable": true,
+            "tameable": true,
             "food": [4, 5, 6],
             "image": "triceratops.jpg"
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "nom": "Dodo",
             "type": "Herbivore",
-            "tamable": true,
+            "tameable": true,
             "food": [4, 5, 6],
             "image": "dodo.jpg"
         },
@@ -44,7 +44,7 @@
             "id": 6,
             "nom": "Pteranodon",
             "type": "Carnivore",
-            "tamable": true,
+            "tameable": true,
             "food": [1, 2, 3],
             "image": "pteranodon.jpg"
         },
@@ -52,7 +52,7 @@
             "id": 7,
             "nom": "Parasaur",
             "type": "Herbivore",
-            "tamable": true,
+            "tameable": true,
             "food": [4, 5, 6],
             "image": "parasaur.jpg"
         },
@@ -60,7 +60,7 @@
             "id": 8,
             "nom": "Sarco",
             "type": "Carnivore",
-            "tamable": true,
+            "tameable": true,
             "food": [1, 2, 3],
             "image": "sarco.jpg"
         },
@@ -68,7 +68,7 @@
             "id": 9,
             "nom": "Spino",
             "type": "Carnivore",
-            "tamable": true,
+            "tameable": true,
             "food": [1, 2, 3],
             "image": "spino.jpg"
         },
@@ -76,7 +76,7 @@
             "id": 10,
             "nom": "Bronto",
             "type": "Herbivore",
-            "tamable": true,
+            "tameable": true,
             "food": [4, 5, 6],
             "image": "bronto.jpg"
         },
@@ -84,7 +84,7 @@
             "id": 11,
             "nom": "Ankylo",
             "type": "Herbivore",
-            "tamable": true,
+            "tameable": true,
             "food": [4, 5, 6],
             "image": "ankylo.jpg"
         },
@@ -92,7 +92,7 @@
             "id": 12,
             "nom": "Argentavis",
             "type": "Carnivore",
-            "tamable": true,
+            "tameable": true,
             "food": [1, 2, 3],
             "image": "argentavis.jpg"
         },
@@ -100,7 +100,7 @@
             "id": 13,
             "nom": "Carno",
             "type": "Carnivore",
-            "tamable": true,
+            "tameable": true,
             "food": [1, 2, 3],
             "image": "carno.jpg"
         }
