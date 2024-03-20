@@ -9,7 +9,7 @@ export default class AllDinosaurs {
             <ul id="dinosaurs-list"></ul>
         `;
 
-        let dinosaursList = view.querySelector("#dinosaurs-list");
+        let dinosaursList = view.getElementsById("#dinosaurs");
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();
         dinosaurs.forEach(dinosaur => {
             let li = document.createElement("li");
