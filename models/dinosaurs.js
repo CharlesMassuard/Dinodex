@@ -1,10 +1,10 @@
 export default class Dinosaurs{
 
-    constructor(id, nom, type, tamable, nourriture, image){
+    constructor(id, nom, type, tameable, nourriture, image){
         this.id = id
         this.nom = nom
         this.type = type
-        this.tamable = tamable
+        this.tameable = tamable
         this.nourriture = nourriture
         this.image = image
     }
@@ -21,8 +21,8 @@ export default class Dinosaurs{
         return this.type
     }
 
-    getTamable(){
-        return this.tamable
+    getTameable(){
+        return this.tameable
     }
 
     getNourriture(){
