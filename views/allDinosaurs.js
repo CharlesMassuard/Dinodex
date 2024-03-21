@@ -14,7 +14,5 @@ export default class AllDinosaurs {
             `;
             dinosaursList.appendChild(li);
         });
-        document.body.appendChild(view);
-        return view;
     }
 }
