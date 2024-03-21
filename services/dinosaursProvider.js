@@ -2,7 +2,7 @@ export default class DinosaursProvider{
 
     static fetchDinosaurs = async () => {
         try {
-            const response = await fetch("localhost:3000/dinosaures");
+            const response = await fetch("http://localhost:3000/dinosaures");
             const json = await response.json();
             return json;
         } catch (error) {
@@ -12,7 +12,7 @@ export default class DinosaursProvider{
 
     static postDinosaur = async (dinosaur) => {
         try {
-            const response = await fetch("localhost:3000/dinosaures", {
+            const response = await fetch("http://localhost:3000/dinosaures", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8',
@@ -28,7 +28,7 @@ export default class DinosaursProvider{
 
     static getDinosaur = async (id) => {
         try {
-            const response = await fetch(`localhost:3000/dinosaures/${id}`);
+            const response = await fetch(`http://localhost:3000/dinosaures/${id}`);
             const json = await response.json();
             return json;
         } catch (error) {

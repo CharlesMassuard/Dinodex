@@ -1,27 +1,20 @@
-import DinosaursProvider from "../services/dinosaursProvider";
-import Dinosaurs from "../models/dinosaurs";
+import DinosaursProvider from "../services/dinosaursProvider.js";
+import Dinosaurs from "../models/dinosaurs.js";
 
 export default class AllDinosaurs {
     async render() {
-        let view = document.createElement("div");
-        view.innerHTML = `
-            <h1>All Dinosaurs</h1>
-            <ul id="dinosaurs-list"></ul>
-        `;
-
-        let dinosaursList = view.getElementsById("#dinosaurs");
+        let dinosaursList = document.querySelector("#dinosaurs");
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();
         dinosaurs.forEach(dinosaur => {
             let li = document.createElement("li");
             li.innerHTML = `
                 <a href="#dinosaurs/${dinosaur.id}">
                     <h2>${dinosaur.nom}</h2>
-                    <img src="${dinosaur.image}" alt="${dinosaur.nom}">
                 </a>
             `;
             dinosaursList.appendChild(li);
         });
-
+        document.body.appendChild(view);
         return view;
     }
 }
