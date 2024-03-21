@@ -103,6 +103,70 @@
             "tameable": true,
             "food": [1, 2, 3],
             "image": "carno.jpg"
+        },
+        {
+            "id": 14,
+            "nom": "Dilo",
+            "type": "Carnivore",
+            "tameable": true,
+            "food": [1, 2, 3],
+            "image": "dilo.jpg"
+        },
+        {
+            "id": 15,
+            "nom": "Diplodocus",
+            "type": "Herbivore",
+            "tameable": true,
+            "food": [4, 5, 6],
+            "image": "diplodocus.jpg"
+        },
+        {
+            "id": 16,
+            "nom": "Giganotosaurus",
+            "type": "Carnivore",
+            "tameable": true,
+            "food": [1, 2, 3],
+            "image": "giganotosaurus.jpg"
+        },
+        {
+            "id": 17,
+            "nom": "Mammoth",
+            "type": "Herbivore",
+            "tameable": true,
+            "food": [4, 5, 6],
+            "image": "mammoth.jpg"
+        },
+        {
+            "id": 18,
+            "nom": "Megalodon",
+            "type": "Carnivore",
+            "tameable": true,
+            "food": [1, 2, 3],
+            "image": "megalodon.jpg"
+        },
+        {
+            "id": 19,
+            "nom": "Plesiosaur",
+            "type": "Carnivore",
+            "tameable": true,
+            "food": [1, 2, 3],
+            "image": "plesiosaur.jpg"
+        },
+        {
+            "id": 20,
+            "nom": "Quetzal",
+            "type": "Herbivore",
+            "tameable": true,
+            "food": [4, 5, 6],
+            "image": "quetzal.jpg"
+        },
+        {
+            "id": 21,
+            "nom": "Sabertooth",
+            "type": "Carnivore",
+            "tameable": true,
+            "food": [1, 2, 3],
+            "image": "sabertooth.jpg"
         }
     ],
 
