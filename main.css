@@ -1,6 +1,64 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
 header{
     position: sticky;
     top: 0;
     background-color: green;
     border: thin solid black;
+}
+
+
+#dinosaurs {
+    list-style: none;
+    padding: 0;
+    width: 90vw;
+    margin: auto;
+}
+
+#dinosaurs > h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+
+}
+
+#dinosaurs ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#dinosaurs li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#dinosaurs li:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#dinosaurs li img {
+    width: 100%;
+    height: auto;
+}
+
+#dinosaurs li h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#dinosaurs li p {
+    margin: 0;
 }
