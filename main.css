@@ -2,7 +2,10 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
 
+a{
+    text-decoration: none;
 }
 
 header{
@@ -10,13 +13,13 @@ header{
     top: 0;
     background-color: green;
     border: thin solid black;
+    z-index: 1000;
 }
 
 
-#dinosaurs {
+#dinosaurs{
     list-style: none;
     padding: 0;
-    width: 90vw;
     margin: auto;
 }
 
@@ -30,35 +33,64 @@ header{
 #dinosaurs ol {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     list-style-type: none;
 }
 
-#dinosaurs li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
+#nourritures{
+    list-style: none;
+    padding: 0;
+    margin: auto;
 }
 
-#dinosaurs li:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+#nourritures > h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+
 }
 
-#dinosaurs li img {
-    width: 100%;
-    height: auto;
+#nourritures ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-#dinosaurs li h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-#dinosaurs li p {
-    margin: 0;
-}
+figure {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+  figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,#0009);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+  }
+  figure:hover figcaption{
+    --_i: 0%;
+  }
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+     -webkit-mask: none;
+     color: #fff;
+    }
+  }
