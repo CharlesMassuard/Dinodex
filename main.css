@@ -17,39 +17,20 @@ header{
 }
 
 
-#dinosaurs{
+#listView{
     list-style: none;
     padding: 0;
     margin: auto;
 }
 
-#dinosaurs > h2{
+#listView > h2{
     text-align: center;
     font-size: 2em;
     margin: 20px 0;
 
 }
 
-#dinosaurs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-#nourritures{
-    list-style: none;
-    padding: 0;
-    margin: auto;
-}
-
-#nourritures > h2{
-    text-align: center;
-    font-size: 2em;
-    margin: 20px 0;
-
-}
-
-#nourritures ol {
+#listView ol {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;

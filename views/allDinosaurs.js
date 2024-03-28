@@ -5,7 +5,7 @@ export default class AllDinosaurs {
     async render() {
         
         let dinosaursList = document.createElement("div");
-        dinosaursList.setAttribute("id", "dinosaurs");
+        dinosaursList.setAttribute("id", "listView");
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();
         let ol = document.createElement("ol");
 

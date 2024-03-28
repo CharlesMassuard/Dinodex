@@ -9,7 +9,7 @@ export default class Favoris{
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();
         let foods = await FoodProvider.fetchFoods();
         let favorisList = document.createElement("div");
-        favorisList.setAttribute("id", "favoris");
+        favorisList.setAttribute("id", "listView");
         let ol = document.createElement("ol");
 
         favoris.forEach(id => {
