@@ -1,5 +1,8 @@
 import AllDinosaurs from "./views/allDinosaurs.js";
 import AllFoods from "./views/allFoods.js";
+import DinosaurShow from "./views/DinosaurShow.js";
+import FoodShow from "./views/FoodShow.js";
+import Favoris from "./views/Favoris.js";
 import Utils from './services/utils.js';
 import Error404 from './views/error404.js';
 
@@ -8,20 +11,20 @@ let allFoods = new AllFoods();
 
 const routes = {
     '/': AllDinosaurs,
-    '/nourritures': AllFoods
+    '/dinosaurs/:id': DinosaurShow,
+    '/nourritures': AllFoods,
+    '/nourritures/:id': FoodShow,
+    '/favoris': Favoris
 };
 
 const router = async () => {
     const content = null || document.getElementById('content');
     let request = Utils.parseRequestURL();
-    console.log(request);
-    console.log(request.resource);
     let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '');
-    console.log(parsedURL);
     let page = routes[parsedURL] ? new routes[parsedURL] : Error404;
-    console.log(page);
     content.innerHTML = await page.render();
 }
 
+localStorage.setItem("favoris", localStorage.getItem("favoris") || JSON.stringify([]));
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);

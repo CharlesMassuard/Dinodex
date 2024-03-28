@@ -6,7 +6,8 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "raptor.jpg"
+            "image": "https://www.dododex.com/media/creature/raptor.png",
+            "description": "Le Raptor est un dinosaure rapide et agile qui est capable de sauter de grandes distances. Il est également capable de se faufiler derrière sa proie pour l'attaquer par surprise. Il est très utile pour la chasse et la collecte de ressources."
         },
         {
             "id": 2,

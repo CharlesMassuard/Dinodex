@@ -11,10 +11,11 @@ export default class AllDinosaurs {
 
         dinosaurs.forEach(dinosaur => {
             let li = document.createElement("li");
+            console.log(dinosaur.image);
             li.innerHTML = `
-                <a href="#dinosaurs/${dinosaur.id}">
+                <a href="#/dinosaurs/${dinosaur.id}">
                     <figure>
-                        <img src="../static/img/nature.png" alt="${dinosaur.nom}">
+                        <img src="${dinosaur.image}" alt="${dinosaur.nom}">
                         <figcaption>"${dinosaur.nom}"</figcaption>
                     </figure>
                 </a>
