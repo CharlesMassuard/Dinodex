@@ -2,7 +2,7 @@ let headerPetit = false;
 let fonduApplique = false;
 
 function fonduHeader() {
-    headerPetit = !headerPetit;
+    headerPetit = true;
     let header = document.querySelector('header');
     let descSite = document.getElementById('descSite');
     let titreSite = document.getElementById('titre');
@@ -68,3 +68,57 @@ function appliquerFondu() {
 }
 
 window.addEventListener('scroll', appliquerFondu);
+
+
+function fonduRemettreGrandHeader() {
+    if(headerPetit) {
+        headerPetit = false;
+        let header = document.querySelector('header');
+        let descSite = document.getElementById('descSite');
+        let titreSite = document.getElementById('titre');
+        let seeMore = document.getElementById('seeMore');
+        
+        // Add these lines to animate the background
+        header.style.backgroundAttachment = 'fixed';
+
+        titreSite.style.removeProperty('margin-top');
+        titreSite.addEventListener('mouseover', function() {
+            this.style.letterSpacing = '10px';
+            this.style.transform = 'scale(1.3)';
+        });
+        
+        titreSite.addEventListener('mouseout', function() {
+            this.style.letterSpacing = 'normal';
+            this.style.transform = 'scale(1)';
+        });
+
+        descSite.style.transition = 'opacity 1.5s';
+        descSite.style.opacity = '1';
+
+        seeMore.style.transition = 'opacity 1.5s';
+        seeMore.style.opacity = '1';
+        
+        // Set the height and borderRadius of the header to the target values after the animation
+        setTimeout(function() {
+            header.style.height = '100vh'; // Increase this value to reduce less the header
+            header.style.position = 'relative';
+            header.style.removeProperty('background-position');
+        }, 100); // Delay the height change to allow the transition to take effect
+    }
+}
+
+document.getElementById('menu-bar').addEventListener('click', menuOnClick);
+document.getElementById('nav').addEventListener('click', changementPage);
+document.querySelector('header').addEventListener('click', function() {
+    if(window.location.hash === '#/' || window.location.hash === '') {
+        fonduRemettreGrandHeader();
+    }
+});
+
+document.getElementById('seeMore').addEventListener('click', function(event) {
+  event.stopPropagation();
+  fonduHeader();
+  window.scrollTo(0, 0);
+});
+
+export {fonduRemettreGrandHeader, fonduHeader};

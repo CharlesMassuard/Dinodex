@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Dinodex</title>
+        <link rel="icon" type="image/png" href="static/img/dodo.ico" />
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" type="text/css" href="header.css">
         <meta charset="utf-8">
@@ -11,15 +12,17 @@
     </head>
     <body>
         <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
+            <div id="menu-bar">
               <div id="bar1" class="bar"></div>
               <div id="bar2" class="bar"></div>
               <div id="bar3" class="bar"></div>
             </div>
             <nav class="nav" id="nav">
               <ul>
-                <li><a href="#" onclick="changementPage()">Accueil</a></li>
-                <li><a href="#/nourritures" onclick="changementPage()">Nourritures</a></li>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#/dinosaurs">Dinosaures</a></li>
+                <li><a href="#/nourritures">Nourritures</a></li>
+                <li><a href="#/favoris">Favoris</a></li>
               </ul>
             </nav> 
           </div>
@@ -30,9 +33,10 @@
                 <h1 id="titre">DINODEX</h1>
                 <h3 id="descSite">Le site des dinos-références</h3>
                 <br>
-                <button id="seeMore" onclick="fonduHeader()">Voir Plus</button>
+                <button id="seeMore">Voir Plus</button>
             </div>
         </header>
-        <div id="content"></div>
+        <div id="content">    
+        </div>
     </body>
 </html>

@@ -1,4 +1,5 @@
 import AllDinosaurs from "./views/allDinosaurs.js";
+import Accueil from "./views/accueil.js";
 import AllFoods from "./views/allFoods.js";
 import DinosaurShow from "./views/DinosaurShow.js";
 import FoodShow from "./views/FoodShow.js";
@@ -7,7 +8,8 @@ import Utils from './services/utils.js';
 import Error404 from './views/error404.js';
 
 const routes = {
-    '/': AllDinosaurs,
+    '/': Accueil,
+    '/dinosaurs': AllDinosaurs,
     '/dinosaurs/:id': DinosaurShow,
     '/nourritures': AllFoods,
     '/nourritures/:id': FoodShow,
