@@ -15,7 +15,8 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "trex.jpg"
+            "image": "https://www.dododex.com/media/creature/rex.png",
+            "description": "Le T-Rex est un dinosaure redoutable qui est capable de tuer la plupart des autres dinosaures en un seul coup. Il est également capable de détruire les structures en bois et en pierre. Il est très utile pour la chasse et la défense de votre base."
         },
         {
             "id": 3,
@@ -23,7 +24,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "stegosaurus.jpg"
+            "image": "https://www.dododex.com/media/creature/stegosaurus.png",
+            "description": "Le Stegosaurus est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à ses plaques osseuses et sa queue épineuse. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 4,
@@ -31,7 +33,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "triceratops.jpg"
+            "image": "https://www.dododex.com/media/creature/triceratops.png",
+            "description": "Le Triceratrops est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à ses cornes et sa frappe puissante. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 5,
@@ -39,7 +42,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "dodo.jpg"
+            "image": "https://www.dododex.com/media/creature/dodo.png",
+            "description": "Le Dodo est un dinosaure herbivore qui est incapable de se défendre contre les prédateurs. Il est cependant capable de collecter de grandes quantités de baies et de légumes. Il est très utile pour la collecte de ressources et la production de kibbles."
         },
         {
             "id": 6,
@@ -47,7 +51,8 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "pteranodon.jpg"
+            "image": "https://www.dododex.com/media/creature/pteranodon.png",
+            "description": "Le Pteranodon est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
             "id": 7,
@@ -55,7 +60,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "parasaur.jpg"
+            "image": "https://www.dododex.com/media/creature/parasaur.png",
+            "description": "Le Parasaur est un dinosaure herbivore qui est capable de détecter les prédateurs à proximité grâce à son cri d'alarme. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 8,
@@ -63,7 +69,8 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "sarco.jpg"
+            "image": "https://www.dododex.com/media/creature/sarco.png",
+            "description": "Le Sarco est un dinosaure amphibie qui est capable de nager rapidement et d'attaquer les proies sur terre et dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 9,
@@ -71,7 +78,8 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "spino.jpg"
+            "image": "https://www.dododex.com/media/creature/spinosaur.png",
+            "description": "Le Spino est un dinosaure amphibie qui est capable de nager rapidement et d'attaquer les proies sur terre et dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 10,
@@ -79,7 +87,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "bronto.jpg"
+            "image": "https://www.dododex.com/media/creature/brontosaurus.png",
+            "description": "Le Bronto est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 11,
@@ -87,7 +96,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "ankylo.jpg"
+            "image": "https://www.dododex.com/media/creature/ankylosaurus.png",
+            "description": "L'Ankylo est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa carapace et sa queue épineuse. Il est également capable de collecter de grandes quantités de métal et de cristal. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 12,
@@ -95,7 +105,8 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "argentavis.jpg"
+            "image": "https://www.dododex.com/media/creature/argentavis.png",
+            "description": "L'Argentavis est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
             "id": 13,
@@ -103,15 +114,17 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "carno.jpg"
+            "image": "https://www.dododex.com/media/creature/carnotaurus.png",
+            "description": "Le Carno est un dinosaure carnivore qui est capable de courir rapidement et d'attaquer les proies avec sa mâchoire puissante. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 14,
-            "nom": "Dilo",
+            "nom": "Dilophosaure",
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "dilo.jpg"
+            "image": "https://www.dododex.com/media/creature/dilophosaur.png",
+            "description": "Le Dilophosaure est un dinosaure carnivore qui est capable de cracher du venin sur ses proies pour les aveugler. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 15,
@@ -119,7 +132,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "diplodocus.jpg"
+            "image": "https://www.dododex.com/media/creature/diplodocus.png",
+            "description": "Le Diplodocus est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 16,
@@ -127,15 +141,17 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "giganotosaurus.jpg"
+            "image": "https://www.dododex.com/media/creature/giganotosaurus.png",
+            "description": "Le Giganotosaurus est un dinosaure carnivore qui est capable de tuer la plupart des autres dinosaures en un seul coup. Il est également capable de détruire les structures en bois et en pierre. Il est très utile pour la chasse et la défense de votre base."
         },
         {
             "id": 17,
-            "nom": "Mammoth",
+            "nom": "Mammouth",
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "mammoth.jpg"
+            "image": "https://www.dododex.com/media/creature/mammoth.png",
+            "description": "Le Mammouth est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 18,
@@ -143,15 +159,17 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "megalodon.jpg"
+            "image": "https://www.dododex.com/media/creature/megalodon.png",
+            "description": "Le Megalodon est un dinosaure marin qui est capable de nager rapidement et d'attaquer les proies dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 19,
-            "nom": "Plesiosaur",
+            "nom": "Plesiosaure",
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "plesiosaur.jpg"
+            "image": "https://www.dododex.com/media/creature/plesiosaur.png",
+            "description": "le Plesiosaure est un dinosaure marin qui est capable de nager rapidement et d'attaquer les proies dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 20,
@@ -159,7 +177,8 @@
             "type": "Herbivore",
             "tameable": true,
             "food": [4, 5, 6],
-            "image": "quetzal.jpg"
+            "image": "https://www.dododex.com/media/creature/quetzal.png",
+            "description": "Le Quetzal est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
             "id": 21,
@@ -167,7 +186,8 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "sabertooth.jpg"
+            "image": "https://www.dododex.com/media/creature/sabertooth.png",
+            "description": "Le Sabertooth est un dinosaure carnivore qui est capable de courir rapidement et d'attaquer les proies avec ses griffes acérées. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         }
     ],
 
@@ -176,37 +196,67 @@
             "id": 1,
             "nom": "Viande crue",
             "type": "Carnivore",
-            "image": "viande_crue.jpg"
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/e/e9/Raw_Meat.png/revision/latest/smart/width/371/height/332?cb=20150704150605"
         },
         {
             "id": 2,
             "nom": "Viande cuite",
             "type": "Carnivore",
-            "image": "viande_cuite.jpg"
+            "image": "https://ark.wiki.gg/images/thumb/c/cd/Cooked_Meat.png/228px-Cooked_Meat.png"
         },
         {
             "id": 3,
             "nom": "Viande prime",
             "type": "Carnivore",
-            "image": "viande_prime.jpg"
+            "image": "https://ark.wiki.gg/images/thumb/0/09/Raw_Prime_Meat.png/228px-Raw_Prime_Meat.png"
         },
         {
             "id": 4,
             "nom": "Baies",
             "type": "Herbivore",
-            "image": "baies.jpg"
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/2/24/Berries.png/revision/latest?cb=20181126051451"
         },
         {
             "id": 5,
             "nom": "Légumes",
             "type": "Herbivore",
-            "image": "legumes.jpg"
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/7/76/Advanced_Crops.png/revision/latest?cb=20200412013443"
         },
         {
             "id": 6,
-            "nom": "Kibbles",
-            "type": "Herbivore",
-            "image": "kibble.jpg"
+            "nom": "Basic Kibbles",
+            "type": "Omnivore",
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/8/80/Basic_Kibble.png/revision/latest?cb=20190419151205"
+        },
+        {
+            "id": 7,
+            "nom": "Simple Kibbles",
+            "type": "Omnivore",
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/d/db/Simple_Kibble.png/revision/latest?cb=20190419151137"
+        },
+        {
+            "id": 8,
+            "nom": "Regular Kibbles",
+            "type": "Omnivore",
+            "image": "https://ark.wiki.gg/images/8/81/Regular_Kibble.png"
+        },
+        {
+            "id": 9,
+            "nom": "Superior Kibbles",
+            "type": "Omnivore",
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/b/bc/Superior_Kibble.png/revision/latest/scale-to-width-down/228?cb=20190419151335"
+        },
+        {
+            "id": 10,
+            "nom": "Exceptional Kibbles",
+            "type": "Omnivore",
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/12/Exceptional_Kibble.png/revision/latest/scale-to-width-down/228?cb=20190419151413"
+        },
+        {
+            "id": 11,
+            "nom": "Extraordinary Kibbles",
+            "type": "Omnivore",
+            "image": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/a/a3/Extraordinary_Kibble.png/revision/latest/scale-to-width-down/228?cb=20190419152957"
         }
     ]
 }

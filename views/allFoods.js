@@ -11,7 +11,7 @@ export default class AllFoods {
             li.innerHTML = `
                 <a href="#/nourritures/${food.id}">
                     <figure>
-                        <img src="../static/img/nature.png" alt="${food.nom}">
+                        <img src="${food.image}" alt="${food.nom}">
                         <figcaption>"${food.nom}"</figcaption>
                     </figure>
                 </a>
