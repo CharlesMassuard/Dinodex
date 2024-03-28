@@ -2,11 +2,8 @@ import FoodProvider from "../services/nourritureProvider.js";
 
 export default class AllFoods {
     async render() {
-        let content = document.querySelector("#content");
-        content.innerHTML = `
-            <h2>Nourritures</h2>
-        `;
-        let foodList = document.querySelector("#nourritures");
+        let foodList = document.createElement("div");
+        foodList.setAttribute("id", "nourritures");
         let foods = await FoodProvider.fetchFoods();
         let ol = document.createElement("ol");
         foods.forEach(food => {
@@ -20,8 +17,8 @@ export default class AllFoods {
                 </a>
             `;
             ol.appendChild(li);
-            foodList.appendChild(ol);
-            return foodList;
         });
+        foodList.appendChild(ol);
+        return foodList.outerHTML;
     }
 }

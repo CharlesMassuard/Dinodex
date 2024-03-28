@@ -4,7 +4,8 @@ import Dinosaurs from "../models/dinosaurs.js";
 export default class AllDinosaurs {
     async render() {
         
-        let dinosaursList = document.querySelector("#dinosaurs");
+        let dinosaursList = document.createElement("div");
+        dinosaursList.setAttribute("id", "dinosaurs");
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();
         let ol = document.createElement("ol");
 
@@ -21,6 +22,6 @@ export default class AllDinosaurs {
             ol.appendChild(li);
         });
         dinosaursList.appendChild(ol);
-        return dinosaursList;
+        return dinosaursList.outerHTML;
     }
 }
