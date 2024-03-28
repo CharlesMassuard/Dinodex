@@ -108,19 +108,16 @@ header .overlay{
   color: white;
   font-size: 20px;
   text-decoration: none;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0), -2px -2px 2px rgb(0, 0, 0), 2px -2px 2px rgb(0, 0, 0), -2px 2px 2px rgb(0, 0, 0);
   z-index: 1000;
 }
 
 .nav li a:hover {
+  display: block;
   font-weight: bold;
   z-index: 1000;
-}
-
-.menu-bg, #menu {
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 1000;
+  transform: scale(1.03);
 }
 
 #menu {
@@ -131,15 +128,16 @@ header .overlay{
 }
 
 .menu-bg {
-  z-index: 1;
   width: 0;
   height: 0;
-  margin: 30px 0 20px 20px;
   background: url("https://w0.peakpx.com/wallpaper/178/906/HD-wallpaper-ark-2-game-2021.jpg");
   background-position: left 500%;
   border-radius: 50%;
   transition: 0.3s ease;
   z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .change {
