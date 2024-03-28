@@ -6,9 +6,6 @@ import Favoris from "./views/Favoris.js";
 import Utils from './services/utils.js';
 import Error404 from './views/error404.js';
 
-let allDinosaurs = new AllDinosaurs();
-let allFoods = new AllFoods();
-
 const routes = {
     '/': AllDinosaurs,
     '/dinosaurs/:id': DinosaurShow,

@@ -11,7 +11,6 @@ export default class AllDinosaurs {
 
         dinosaurs.forEach(dinosaur => {
             let li = document.createElement("li");
-            console.log(dinosaur.image);
             li.innerHTML = `
                 <a href="#/dinosaurs/${dinosaur.id}">
                     <figure>
