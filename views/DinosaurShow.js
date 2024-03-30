@@ -27,8 +27,7 @@ export default class DinosaurShow {
         dinosaurShow.innerHTML = `
             <div id="showDino">
                 <h1>${dinosaur.nom}</h1>
-                ${isFavoris ? value = "Retirer des favoris" : value = "Mettre en favoris"}
-                <input type="button" id="buttonFavoris" value="${value}" onclick="favoris(${dinosaur.id})">
+                <input type="button" id="buttonFavoris" value="${isFavoris ? "Retirer des favoris" : "Mettre en favoris"}" onclick="favoris(${dinosaur.id})">
                 <img src="${dinosaur.image}" alt="${dinosaur.nom}">
                 <p>${dinosaur.description}</p>
                 <h1>Alimentation</h1>

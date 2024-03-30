@@ -35,6 +35,18 @@ header{
     list-style-type: none;
 }
 
+#noFavoris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+}
+
+/* CARTES */
+
 figure {
     display: grid;
     border-radius: 1rem;

@@ -25,6 +25,6 @@ const router = async () => {
     window.scrollTo(0, 0);
 }
 
-localStorage.setItem("favoris", localStorage.getItem("favoris") || JSON.stringify([]));
+// localStorage.setItem("favoris", localStorage.getItem("favoris") || JSON.stringify([]));
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);
