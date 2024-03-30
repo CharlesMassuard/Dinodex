@@ -227,67 +227,78 @@
             "id": 1,
             "nom": "Viande crue",
             "type": "Carnivore",
-            "image": "https://ark.wiki.gg/images/e/e9/Raw_Meat.png"
+            "image": "https://ark.wiki.gg/images/e/e9/Raw_Meat.png",
+            "desc": "La viande crue est une nourriture de base pour les dinosaures carnivores. Elle peut être obtenue en tuant des dinosaures ou en les découpant avec un outil tranchant."
         },
         {
             "id": 2,
             "nom": "Viande cuite",
             "type": "Carnivore",
-            "image": "https://ark.wiki.gg/images/c/cd/Cooked_Meat.png"
+            "image": "https://ark.wiki.gg/images/c/cd/Cooked_Meat.png",
+            "desc": "La viande cuite est une nourriture de base pour les dinosaures carnivores. Elle peut être obtenue en cuisant de la viande crue dans un feu de camp ou un four industriel."
         },
         {
             "id": 3,
             "nom": "Viande prime",
             "type": "Carnivore",
-            "image": "https://ark.wiki.gg/images/0/09/Raw_Prime_Meat.png"
+            "image": "https://ark.wiki.gg/images/0/09/Raw_Prime_Meat.png",
+            "desc": "La viande prime est une nourriture de qualité supérieure pour les dinosaures carnivores. Elle peut être obtenue en tuant des dinosaures particuliers"
         },
         {
             "id": 4,
             "nom": "Baies",
             "type": "Herbivore",
-            "image": "https://ark.wiki.gg/images/2/24/Berries.png"
+            "image": "https://ark.wiki.gg/images/2/24/Berries.png",
+            "desc": "Les baies sont une nourriture de base pour les dinosaures herbivores. Elles peuvent être obtenues en récoltant des buissons avec les mains, ou un dinosaure herbivore."
         },
         {
             "id": 5,
             "nom": "Légumes",
             "type": "Herbivore",
-            "image": "https://i.pinimg.com/originals/2d/12/62/2d126273e7ae2c7db2b389c8528875ed.png"
+            "image": "https://i.pinimg.com/originals/2d/12/62/2d126273e7ae2c7db2b389c8528875ed.png",
+            "desc": "Les légumes sont une nourriture de qualité supérieure pour les dinosaures herbivores. Ils peuvent être obtenus en cultivant des plantes dans une serre."
         },
         {
             "id": 6,
             "nom": "Basic Kibble",
             "type": "Omnivore",
-            "image": "https://ark.wiki.gg/images/8/80/Basic_Kibble.png"
+            "image": "https://ark.wiki.gg/images/8/80/Basic_Kibble.png",
+            "desc": "Le Basic Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de toute petite taille"
         },
         {
             "id": 7,
             "nom": "Simple Kibble",
             "type": "Omnivore",
-            "image": "https://ark.wiki.gg/images/d/db/Simple_Kibble.png"
+            "image": "https://ark.wiki.gg/images/d/db/Simple_Kibble.png",
+            "desc": "Le Simple Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de petite taille"
         },
         {
             "id": 8,
             "nom": "Regular Kibble",
             "type": "Omnivore",
-            "image": "https://ark.wiki.gg/images/8/81/Regular_Kibble.png"
+            "image": "https://ark.wiki.gg/images/8/81/Regular_Kibble.png",
+            "desc": "Le Regular Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de taille moyenne"
         },
         {
             "id": 9,
             "nom": "Superior Kibble",
             "type": "Omnivore",
-            "image": "https://ark.wiki.gg/images/b/bc/Superior_Kibble.png"
+            "image": "https://ark.wiki.gg/images/b/bc/Superior_Kibble.png",
+            "desc": "Le Superior Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de grande taille"
         },
         {
             "id": 10,
             "nom": "Exceptional Kibble",
             "type": "Omnivore",
-            "image": "https://ark.wiki.gg/images/1/12/Exceptional_Kibble.png"
+            "image": "https://ark.wiki.gg/images/1/12/Exceptional_Kibble.png",
+            "desc": "L'Exceptional Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de très grande taille"
         },
         {
             "id": 11,
             "nom": "Extraordinary Kibble",
             "type": "Omnivore",
-            "image": "https://ark.wiki.gg/images/a/a3/Extraordinary_Kibble.png"
+            "image": "https://ark.wiki.gg/images/a/a3/Extraordinary_Kibble.png",
+            "desc": "L'Extraordinary Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs spéciaux"
         }
     ]
 }

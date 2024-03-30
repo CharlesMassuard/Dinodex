@@ -13,10 +13,16 @@ export default class FoodShow {
         let foodShow = document.createElement("div");
         foodShow.setAttribute("id", "food");
         foodShow.innerHTML = `
-            <div id="showFood">
-                <h1>${food.nom}</h1>
-                <img src="${food.image}" alt="${food.nom}">
-                <p>${food.description}</p>
+            <div id="showItem">
+                <div id="lineItem">
+                    <div id="descItem">
+                        <h2>${food.nom}</h2>
+                        <p>${food.desc}</p>
+                    </div>
+                    <div id="imgItem">
+                        <img src="${food.image}" alt="${food.nom}">
+                    </div>
+                </div>
             </div>
         `;
         return foodShow.outerHTML;  
