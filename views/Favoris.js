@@ -4,6 +4,7 @@ import FoodProvider from "../services/nourritureProvider.js";
 export default class Favoris{
     async render(){
 
+        document.title = "Dinodex | Favoris";
         let favoris = localStorage.getItem("favoris");
         favoris = JSON.parse(favoris);
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();

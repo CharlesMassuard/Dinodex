@@ -8,6 +8,7 @@ export default class FoodShow {
         let food = new Nourriture();
         let request = Utils.parseRequestURL();
         food = await NourritureProvider.getFood(request.id);
+        document.title = `Dinodex | ${food.nom}`;
 
         let foodShow = document.createElement("div");
         foodShow.setAttribute("id", "food");

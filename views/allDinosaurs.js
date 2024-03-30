@@ -4,6 +4,7 @@ import Dinosaurs from "../models/dinosaurs.js";
 export default class AllDinosaurs {
     async render() {
         
+        document.title = "Dinodex | Dinosaures";
         let dinosaursList = document.createElement("div");
         dinosaursList.setAttribute("id", "listView");
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();

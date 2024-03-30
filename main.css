@@ -4,6 +4,27 @@ body{
     padding: 0;
 }
 
+
+#buttonFavoris {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  font-size: normal;
+  width: 150px;
+  height: auto;
+  margin-top: -20px;
+}
+#buttonFavoris:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+
+
 a{
     text-decoration: none;
 }
@@ -43,6 +64,67 @@ header{
     font-weight: bold;
     flex-direction: column;
     height: calc(100vh - 80px);
+}
+
+#showItem{
+    margin-top: 100px;
+}
+
+#lineItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 5vw;
+}
+
+#descItem {
+  background-color: black;
+  color: white;
+  border-radius: 50px; 
+  padding: 20px;
+  margin-right: 5vw;
+  font-size: large;
+  width: 50vw;
+}
+
+#imgItem {
+  width: 30vw;
+  height: auto;
+}
+
+#centeredSection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  flex-direction: row
+}
+
+.tableContainer {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#centeredSection > .tableContainer > table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+#centeredSection table img {
+  width: 100px;
+  height: auto;
+}
+
+table tr {
+  border-bottom: 1px solid black;
+}
+
+.tableContainer table td {
+  border-left: 1px solid black;
 }
 
 /* CARTES */

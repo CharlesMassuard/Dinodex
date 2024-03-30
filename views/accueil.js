@@ -4,6 +4,7 @@ import { fonduRemettreGrandHeader } from "../header.js";
 export default class Accueil {
     async render() {
         
+        document.title = "Dinodex";
         fonduRemettreGrandHeader();
         let dinosaursList = document.createElement("div");
         dinosaursList.setAttribute("id", "listView");

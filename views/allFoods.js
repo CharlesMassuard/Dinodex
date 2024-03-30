@@ -2,6 +2,7 @@ import FoodProvider from "../services/nourritureProvider.js";
 
 export default class AllFoods {
     async render() {
+        document.title = "Dinodex | Nourritures";
         let foodList = document.createElement("div");
         foodList.setAttribute("id", "listView");
         let foods = await FoodProvider.fetchFoods();
