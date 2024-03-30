@@ -10,6 +10,14 @@ export default class FoodShow {
         food = await NourritureProvider.getFood(request.id);
         document.title = `Dinodex | ${food.nom}`;
 
+        let isFavoris;
+        let favoris = localStorage.getItem("favoris");
+        if(favoris){
+            isFavoris = favoris.includes(food.id);
+        } else {
+            isFavoris = false;
+        }
+
         let foodShow = document.createElement("div");
         foodShow.setAttribute("id", "food");
         foodShow.innerHTML = `
@@ -18,6 +26,7 @@ export default class FoodShow {
                     <div id="descItem">
                         <h2>${food.nom}</h2>
                         <p>${food.desc}</p>
+                        <input type="button" id="buttonFavoris" value="${isFavoris ? "Retirer des favoris" : "Mettre en favoris"}" onclick="favoris(${food.id})">
                     </div>
                     <div id="imgItem">
                         <img src="${food.image}" alt="${food.nom}">

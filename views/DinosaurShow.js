@@ -29,7 +29,6 @@ export default class DinosaurShow {
         } else {
             isFavoris = false;
         }
-        let value = "";
 
         let dinosaurShow = document.createElement("div");
         dinosaurShow.setAttribute("id", "dinosaur");
