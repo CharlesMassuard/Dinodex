@@ -14,7 +14,7 @@
         },
         {
             "id": 2,
-            "nom": "T-Rex",
+            "nom": "Rex",
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],

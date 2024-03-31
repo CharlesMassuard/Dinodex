@@ -25,6 +25,7 @@ export default class favorisDinos{
                 <div id="noFavoris">
                     <img src="https://media.tenor.com/5plaXY9f1uAAAAAj/dino-dinosaur.gif" alt="Dinosaure triste">    
                     <h1>Vous n'avez pas de favoris</h1>
+                    <input type="button" id="buttonFavoris" value="Ajouter des favoris" onclick="window.location.href = '#/dinosaurs'">
                 </div>
             `
             return nofavorisDinos.outerHTML;
