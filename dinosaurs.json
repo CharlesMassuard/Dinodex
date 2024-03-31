@@ -328,5 +328,103 @@
             "image": "https://ark.wiki.gg/images/a/a3/Extraordinary_Kibble.png",
             "desc": "L'Extraordinary Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs spéciaux"
         }
+    ],
+    "armures" : [
+        {
+            "id": 1,
+            "nom": "Sans armure",
+            "armure": 0,
+            "resistanceFroid": 0,
+            "resistanceChaud": 0,
+            "image": "./static/img/persos/persoBase.png"
+        },
+        {
+            "id": 2,
+            "nom": "Vêtements en tissu",
+            "armure": 50.0,
+            "resistanceFroid": 33,
+            "resistanceChaud": 84,
+            "image": "./static/img/persos/tissu.png"
+        },
+        {
+            "id": 3,
+            "nom": "Vêtements en cuir",
+            "armure": 100.0,
+            "resistanceFroid": 95,
+            "resistanceChaud": -28,
+            "image": "./static/img/persos/cuir.png"
+        },
+        {
+            "id": 4,
+            "nom": "Armure en fourrure",
+            "armure": 200.0,
+            "resistanceFroid": 281,
+            "resistanceChaud": -118,
+            "image": "./static/img/persos/fourrure.png"
+        },
+        {
+            "id": 5,
+            "nom": "Vêtements du desert",
+            "armure": 200.0,
+            "resistanceFroid": 34,
+            "resistanceChaud": 146,
+            "image": "./static/img/persos/desert.png"
+        },
+        {
+            "id": 6,
+            "nom": "Tenue de camouflage",
+            "armure": 160.0,
+            "resistanceFroid": 27,
+            "resistanceChaud": 174,
+            "image": "./static/img/persos/camouflage.png"
+        },
+        {
+            "id": 7,
+            "nom": "Armure en chitine",
+            "armure": 250.0,
+            "resistanceFroid": 45,
+            "resistanceChaud": -28,
+            "image": "./static/img/persos/chitine.png"
+        },
+        {
+            "id": 8,
+            "nom": "Armure en métal",
+            "armure": 500.0,
+            "resistanceFroid": 67,
+            "resistanceChaud": -28,
+            "image": "./static/img/persos/flak.png"
+        },
+        {
+            "id": 9,
+            "nom": "Tenue anti-radiation",
+            "armure": 325.0,
+            "resistanceFroid": 56,
+            "resistanceChaud": 1462,
+            "image": "./static/img/persos/antiRad.png"
+        },
+        {
+            "id": 10,
+            "nom": "Tenue de plongée",
+            "armure": 5.0,
+            "resistanceFroid": 78,
+            "resistanceChaud": -16,
+            "image": "./static/img/persos/scuba.png"
+        },
+        {
+            "id": 11,
+            "nom": "Tenue anti-émeute",
+            "armure": 575.0,
+            "resistanceFroid": 67,
+            "resistanceChaud": -56,
+            "image": "./static/img/persos/antiEmeute.png"
+        },
+        {
+            "id": 12,
+            "nom": "Armure TEK",
+            "armure": 900.0,
+            "resistanceFroid": 61,
+            "resistanceChaud": 9,
+            "image": "./static/img/persos/tekArmor.png"
+        }
     ]
 }

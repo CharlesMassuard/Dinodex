@@ -1,3 +1,5 @@
+import ArmuresProvider from "../services/armuresProvider.js";
+
 export default class Persos{
 
     async render(){
@@ -9,48 +11,55 @@ export default class Persos{
         imgPrincipal.setAttribute("src", "../static/img/persos/persoBase.png");
         imgPrincipal.setAttribute("alt", "Personnage séléctionné");
         imgPrincipal.setAttribute("id", "imgPrincipal");
-        laPage.appendChild(imgPrincipal);
 
         let imgList = document.createElement("div");
         imgList.setAttribute("id", "imgList");
 
-        let img1 = document.createElement("img");
-        img1.setAttribute("src", "../static/img/persos/teteBob.png");
-        img1.setAttribute("alt", "Personnage de base");
-        img1.setAttribute("title", "Personnage de base");
-        img1.setAttribute("onclick", "changePerso('persoBase')");
-        let img2 = document.createElement("img");
-        img2.setAttribute("src", "https://ark.wiki.gg/images/e/ec/Flak_Helmet.png");
-        img2.setAttribute("alt", "Armure en métal");
-        img2.setAttribute("title", "Armure en métal");
-        img2.setAttribute("onclick", "changePerso('flak')");
-        let img3 = document.createElement("img");
-        img3.setAttribute("src", "https://ark.wiki.gg/images/f/f6/Manticore_Helmet_Skin.png");
-        img3.setAttribute("alt", "Skin de la manticore");
-        img3.setAttribute("onclick", "changePerso('manticore')");
-        img3.setAttribute("title", "Skin de la manticore");
-        let img4 = document.createElement("img");
-        img4.setAttribute("src", "https://ark.wiki.gg/images/8/81/Corrupted_Helmet_Skin.png");
-        img4.setAttribute("alt", "Skin corrompu");
-        img4.setAttribute("onclick", "changePerso('corrompu')");
-        img4.setAttribute("title", "Skin corrompu");
-        let img5 = document.createElement("img");
-        img5.setAttribute("src", "https://ark.wiki.gg/images/7/7b/Master_Controller_Helmet_Skin.png");
-        img5.setAttribute("alt", "Casque Master Controller");
-        img5.setAttribute("title", "Casque Master Controller"); 
-        img5.setAttribute("onclick", "changePerso('casqueMaitreControlleur')");
-        
-        imgList.appendChild(img1);
-        imgList.appendChild(img2);
-        imgList.appendChild(img3);
-        imgList.appendChild(img4);
-        imgList.appendChild(img5);
+        let armures = await ArmuresProvider.fetchArmures();
+        armures.forEach(armure => {
+            let img = document.createElement("img");
+            img.setAttribute("src", armure.image);
+            img.setAttribute("alt", armure.nom);
+            img.setAttribute("title", armure.nom)
+            img.setAttribute("onclick", "changerArmure('" + armure.id +"')");
+            imgList.appendChild(img);
+        });
+
+        let stats = document.createElement("div");
+        stats.setAttribute("id", "stats");
+        let nomArmure = document.createElement("h2");
+        nomArmure.setAttribute("id", "nomArmure");
+        nomArmure.innerHTML = "Sans armure";
+        stats.appendChild(nomArmure);
+        let armureProtection = document.createElement("p");
+        armureProtection.setAttribute("id", "armureProtection");
+        armureProtection.innerHTML = "<b>Armure :</b> 0";
+        stats.appendChild(armureProtection);
+        let resistanceFroid = document.createElement("p");
+        resistanceFroid.setAttribute("id", "resistanceFroid");
+        resistanceFroid.innerHTML = "<b>Résistance au froid :</b> 0";
+        stats.appendChild(resistanceFroid);
+        let resistanceChaud = document.createElement("p");
+        resistanceChaud.setAttribute("id", "resistanceChaud");
+        resistanceChaud.innerHTML = "<b>Résistance à la chaleur :</b> 0";
+        stats.appendChild(resistanceChaud);
+
         laPage.appendChild(imgList);
+        laPage.appendChild(imgPrincipal);
+        laPage.appendChild(stats);
 
         return laPage.outerHTML;
     }
 }
 
-window.changePerso = function(perso){
-    document.getElementById("imgPrincipal").setAttribute("src", "../static/img/persos/" + perso + ".png");
+window.changerArmure = function(armure){
+    ArmuresProvider.fetchArmures().then(armures => {
+        armure = armures.find(a => a.id == armure);
+
+        document.getElementById("imgPrincipal").setAttribute("src", armure.image);
+        document.getElementById("nomArmure").innerHTML = armure.nom;
+        document.getElementById("armureProtection").innerHTML = "<b>Armure : </b>" + armure.armure;
+        document.getElementById("resistanceFroid").innerHTML = "<b>Résistance au froid : </b>" + armure.resistanceFroid;
+        document.getElementById("resistanceChaud").innerHTML = "<b>Résistance à la chaleur : </b>" + armure.resistanceChaud;
+    });
 }
