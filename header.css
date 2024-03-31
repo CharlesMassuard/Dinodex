@@ -163,7 +163,7 @@ header .overlay{
   width: 0;
   height: 0;
   background: url("https://w0.peakpx.com/wallpaper/178/906/HD-wallpaper-ark-2-game-2021.jpg");
-  background-position: left 500%;
+  background-position: left 400%;
   border-radius: 50%;
   transition: 0.3s ease;
   z-index: 999;
@@ -194,6 +194,6 @@ header .overlay{
 
 .change-bg {
   width: 520px;
-  height: 460px;
+  height: 610px;
   transform: translate(-60%,-30%);
 }

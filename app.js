@@ -7,6 +7,7 @@ import Favoris from "./views/Favoris.js";
 import Utils from './services/utils.js';
 import Error404 from './views/error404.js';
 import SearchPage from './views/searchPage.js';
+import Persos from "./views/persos.js";
 
 const routes = {
     '/': Accueil,
@@ -15,7 +16,8 @@ const routes = {
     '/nourritures': AllFoods,
     '/nourritures/:id': FoodShow,
     '/favoris': Favoris,
-    '/search/:id': SearchPage
+    '/search/:id': SearchPage,
+    '/persos': Persos
 };
 
 const router = async () => {
