@@ -121,4 +121,10 @@ document.getElementById('seeMore').addEventListener('click', function(event) {
   window.scrollTo(0, 0);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    if(window.location.hash !== '#/' || window.location.hash !== '') {
+        fonduHeader();
+    }
+});
+
 export {fonduRemettreGrandHeader, fonduHeader};

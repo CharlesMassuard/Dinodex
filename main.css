@@ -23,7 +23,46 @@ body{
   opacity: 0.8;
   transform: scale(1.01);
 }
-
+#buttonDeleteFavoris{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  font-size: normal;
+  width: 200px;
+  height: auto;
+  margin-top: -20px;
+  margin-left: 1vw;
+  font-weight: bold;
+}
+#buttonDeleteFavoris:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+#buttonGetAmelioration {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  font-size: normal;
+  width: 250px;
+  height: auto;
+  margin-top: -20px;
+  margin-left: 1vw;
+  font-weight: bold;
+}
+#buttonGetAmelioration:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
 
 a{
     text-decoration: none;
@@ -40,7 +79,6 @@ header{
     list-style: none;
     padding: 0;
     margin-top: 100px;
-    margin-left: 5vw;
 }
 
 #listView > h2{

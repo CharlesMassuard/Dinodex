@@ -7,7 +7,9 @@
             "tameable": true,
             "food": [1, 2, 3],
             "kibble": 7,
-            "image": "https://www.dododex.com/media/creature/raptor.png",
+            "image": "./static/img/dinos/raptor.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/raptorTek.png",
             "description": "Le Raptor est un dinosaure rapide et agile qui est capable de sauter de grandes distances. Il est également capable de se faufiler derrière sa proie pour l'attaquer par surprise. Il est très utile pour la chasse et la collecte de ressources."
         },
         {
@@ -17,7 +19,9 @@
             "tameable": true,
             "food": [1, 2, 3],
             "kibble": 10,
-            "image": "https://www.dododex.com/media/creature/rex.png",
+            "image": "./static/img/dinos/rex.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/rexTek.png",
             "description": "Le T-Rex est un dinosaure redoutable qui est capable de tuer la plupart des autres dinosaures en un seul coup. Il est également capable de détruire les structures en bois et en pierre. Il est très utile pour la chasse et la défense de votre base."
         },
         {
@@ -28,6 +32,8 @@
             "food": [4, 5],
             "kibble": 8,
             "image": "https://www.dododex.com/media/creature/stegosaurus.png",
+            "tekVariant": true,
+            "tekImage": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/c/cd/Stegosaurus_Bionic_Costume.png/revision/latest?cb=20170924182114",
             "description": "Le Stegosaurus est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à ses plaques osseuses et sa queue épineuse. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
@@ -38,6 +44,8 @@
             "food": [4, 5],
             "kibble": 7,
             "image": "https://www.dododex.com/media/creature/triceratops.png",
+            "tekVariant": true,
+            "tekImage": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/1b/Mod_Primal_Fear_Tek_Trike_Icon_Image.png/revision/latest?cb=20190401171011",
             "description": "Le Triceratrops est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à ses cornes et sa frappe puissante. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
@@ -48,6 +56,7 @@
             "food": [4, 5],
             "kibble": 6,
             "image": "https://www.dododex.com/media/creature/dodo.png",
+            "tekVariant": false,
             "description": "Le Dodo est un dinosaure herbivore qui est incapable de se défendre contre les prédateurs. Il est cependant capable de collecter de grandes quantités de baies et de légumes. Il est très utile pour la collecte de ressources et la production de kibbles."
         },
         {
@@ -58,6 +67,7 @@
             "food": [1, 2, 3],
             "kibble": 8,
             "image": "https://www.dododex.com/media/creature/pteranodon.png",
+            "tekVariant": false,
             "description": "Le Pteranodon est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
@@ -68,6 +78,8 @@
             "food": [4, 5],
             "kibble": 6,
             "image": "https://www.dododex.com/media/creature/parasaur.png",
+            "tekVariant": true,
+            "tekImage": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/1/15/Mod_Primal_Fear_Tek_Parasaur_Icon_Image.png/revision/latest?cb=20190401163934",
             "description": "Le Parasaur est un dinosaure herbivore qui est capable de détecter les prédateurs à proximité grâce à son cri d'alarme. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
@@ -78,6 +90,7 @@
             "food": [1, 2, 3],
             "kibble": 8,
             "image": "https://www.dododex.com/media/creature/sarco.png",
+            "tekVariant": false,
             "description": "Le Sarco est un dinosaure amphibie qui est capable de nager rapidement et d'attaquer les proies sur terre et dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
@@ -88,6 +101,7 @@
             "food": [1, 2, 3],
             "kibble": 10,
             "image": "https://www.dododex.com/media/creature/spinosaur.png",
+            "tekVariant": false,
             "description": "Le Spino est un dinosaure amphibie qui est capable de nager rapidement et d'attaquer les proies sur terre et dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
@@ -98,6 +112,7 @@
             "food": [4, 5],
             "kibble": 10,
             "image": "https://www.dododex.com/media/creature/brontosaurus.png",
+            "tekVariant": false,
             "description": "Le Bronto est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
@@ -108,6 +123,7 @@
             "food": [4, 5],
             "kibble": 8,
             "image": "https://www.dododex.com/media/creature/ankylosaurus.png",
+            "tekVariant": false,
             "description": "L'Ankylo est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa carapace et sa queue épineuse. Il est également capable de collecter de grandes quantités de métal et de cristal. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
@@ -118,6 +134,7 @@
             "food": [1, 2, 3],
             "kibble": 9,
             "image": "https://www.dododex.com/media/creature/argentavis.png",
+            "tekVariant": false,
             "description": "L'Argentavis est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
@@ -128,6 +145,7 @@
             "food": [1, 2, 3],
             "kibble": 8,
             "image": "https://www.dododex.com/media/creature/carnotaurus.png",
+            "tekVariant": false,
             "description": "Le Carno est un dinosaure carnivore qui est capable de courir rapidement et d'attaquer les proies avec sa mâchoire puissante. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
@@ -138,6 +156,7 @@
             "food": [1, 2, 3],
             "kibble": 6,
             "image": "https://www.dododex.com/media/creature/dilophosaur.png",
+            "tekVariant": false,
             "description": "Le Dilophosaure est un dinosaure carnivore qui est capable de cracher du venin sur ses proies pour les aveugler. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
@@ -148,6 +167,7 @@
             "food": [4, 5],
             "kibble": 8,
             "image": "https://www.dododex.com/media/creature/diplodocus.png",
+            "tekVariant": false,
             "description": "Le Diplodocus est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
@@ -158,6 +178,7 @@
             "food": [1, 2, 3],
             "kibble": 10,
             "image": "https://www.dododex.com/media/creature/giganotosaurus.png",
+            "tekVariant": false,
             "description": "Le Giganotosaurus est un dinosaure carnivore qui est capable de tuer la plupart des autres dinosaures en un seul coup. Il est également capable de détruire les structures en bois et en pierre. Il est très utile pour la chasse et la défense de votre base."
         },
         {
@@ -168,6 +189,7 @@
             "food": [4, 5],
             "kibble": 9,
             "image": "https://www.dododex.com/media/creature/mammoth.png",
+            "tekVariant": false,
             "description": "Le Mammouth est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
@@ -178,6 +200,7 @@
             "food": [1, 2, 3],
             "kibble": 9,
             "image": "https://www.dododex.com/media/creature/megalodon.png",
+            "tekVariant": false,
             "description": "Le Megalodon est un dinosaure marin qui est capable de nager rapidement et d'attaquer les proies dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
@@ -188,6 +211,7 @@
             "food": [1, 2, 3],
             "kibble": 9,
             "image": "https://www.dododex.com/media/creature/plesiosaur.png",
+            "tekVariant": false,
             "description": "le Plesiosaure est un dinosaure marin qui est capable de nager rapidement et d'attaquer les proies dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
@@ -198,6 +222,8 @@
             "food": [4, 5],
             "kibble": 9,
             "image": "https://www.dododex.com/media/creature/quetzal.png",
+            "tekVariant": true,
+            "tekImage": "https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/6/64/Mod_Primal_Fear_Tek_Quetzal_Icon_Image.png/revision/latest?cb=20190401165032",
             "description": "Le Quetzal est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
@@ -208,6 +234,7 @@
             "food": [1, 2, 3],
             "kibble": 8,
             "image": "https://www.dododex.com/media/creature/sabertooth.png",
+            "tekVariant": false,
             "description": "Le Sabertooth est un dinosaure carnivore qui est capable de courir rapidement et d'attaquer les proies avec ses griffes acérées. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
@@ -218,6 +245,7 @@
             "food": [1, 2, 3],
             "kibble": 11,
             "image": "https://www.dododex.com/media/creature/griffin.png",
+            "tekVariant": false,
             "description": "Le Griffon est une créature volante qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         }
     ],

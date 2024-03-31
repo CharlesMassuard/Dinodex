@@ -1,31 +1,63 @@
+import { fonduHeader } from "../header.js";
 import DinosaursProvider from "../services/dinosaursProvider.js";
 import FoodProvider from "../services/nourritureProvider.js";
 
-export default class Favoris{
+export default class favorisDinos{
     async render(){
 
         document.title = "Dinodex | Favoris";
-        let favoris = localStorage.getItem("favoris");
-        favoris = JSON.parse(favoris);
+        let favorisDinos = localStorage.getItem("favorisDinos");
+        favorisDinos = JSON.parse(favorisDinos);
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();
         let foods = await FoodProvider.fetchFoods();
-        let favorisList = document.createElement("div");
-        favorisList.setAttribute("id", "listView");
-        let ol = document.createElement("ol");
 
-        if(favoris.length == 0){
-            favorisList.innerHTML = `
+        let favorisFoods = localStorage.getItem("favorisFoods");
+        favorisFoods = JSON.parse(favorisFoods);
+
+        let favoris = document.createElement("div");
+        favoris.setAttribute("id", "listView");
+        let olDinos = document.createElement("ol");
+        let olFoods = document.createElement("ol");
+
+        if(favorisDinos.length == 0 && favorisFoods.length == 0){
+            let nofavorisDinos = document.createElement("div");
+            nofavorisDinos.innerHTML = `
                 <div id="noFavoris">
                     <img src="https://media.tenor.com/5plaXY9f1uAAAAAj/dino-dinosaur.gif" alt="Dinosaure triste">    
                     <h1>Vous n'avez pas de favoris</h1>
                 </div>
             `
-            return favorisList.outerHTML;
+            return nofavorisDinos.outerHTML;
         } else {
-            favoris.forEach(id => {
-                let li = document.createElement("li");
-                let dino = dinosaurs.find(d => d.id == id);
-                if(dino){
+            let buttonDeleteFavoris = document.createElement("input");
+            buttonDeleteFavoris.setAttribute("type", "button");
+            buttonDeleteFavoris.setAttribute("id", "buttonDeleteFavoris");
+            buttonDeleteFavoris.setAttribute("value", "Supprimer tous les favoris");
+            buttonDeleteFavoris.setAttribute("onclick", "deleteAllFavoris()");
+            favoris.appendChild(buttonDeleteFavoris);
+            if(favorisDinos.length > 0){
+                let titre = document.createElement("h1");
+                titre.setAttribute("id", "centeredSection");
+                titre.innerHTML = "Dinosaures favoris";
+                favoris.appendChild(titre);
+                favorisDinos.forEach(id => {
+                    let li = document.createElement("li");
+                    let dino = dinosaurs.find(d => d.id == id);
+                    let dinosAmeliores = localStorage.getItem("dinosAmeliores");
+                    if(dinosAmeliores){
+                        dinosAmeliores = JSON.parse(dinosAmeliores);
+                    } else {
+                        dinosAmeliores = [];
+                    }
+                    let isAmeliore = false;
+                    for (let i = 0; i < dinosAmeliores.length; i++) {
+                        let dinosaurId = parseInt(dino.id);
+                        if (dinosAmeliores[i] === dinosaurId) {
+                            dino.image = dino.tekImage;
+                            dino.nom = "TEK " + dino.nom;
+                            isAmeliore = true;
+                        }
+                    }
                     li.innerHTML = `
                         <a href="#/dinosaurs/${dino.id}">
                             <figure>
@@ -34,7 +66,17 @@ export default class Favoris{
                             </figure>
                         </a>
                     `;
-                } else {
+                    olDinos.appendChild(li);
+                });
+                favoris.appendChild(olDinos);
+            }
+            if(favorisFoods.length > 0){
+                let titreFoods = document.createElement("h1");
+                titreFoods.setAttribute("id", "centeredSection");
+                titreFoods.innerHTML = "Nourritures favorites";
+                favoris.appendChild(titreFoods);
+                favorisFoods.forEach(id => {
+                    let li = document.createElement("li");
                     let food = foods.find(f => f.id == id);
                     li.innerHTML = `
                         <a href="#/nourritures/${food.id}">
@@ -44,11 +86,19 @@ export default class Favoris{
                             </figure>
                         </a>
                     `;
-                }
-            ol.appendChild(li);
-            });
-            favorisList.appendChild(ol);
-            return favorisList.outerHTML;
+                    olFoods.appendChild(li);
+                });
+                favoris.appendChild(olFoods);
+            }
+            return favoris.outerHTML;
         }
+    }
+}
+
+window.deleteAllFavoris = function(){
+    if(confirm("Êtes-vous sûr de vouloir supprimer tous les favoris ? Cette action est irrévocable.")){
+        localStorage.setItem("favorisDinos", JSON.stringify([]));
+        localStorage.setItem("favorisFoods", JSON.stringify([]));
+        window.location.reload();
     }
 }
