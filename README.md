@@ -21,4 +21,5 @@ python -m http.server
     - Gestion des favoris en local
 - Pagination  
 - JSON relationnel avec des relations diverses et variées  
-- Barre de recherche  
+- Barre de recherche
+- Lazy loading

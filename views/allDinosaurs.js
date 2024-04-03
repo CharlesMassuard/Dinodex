@@ -41,48 +41,8 @@ export default class AllDinosaurs {
             `;
             ol.appendChild(li);
         });
-        this.initLazyLoad();
         dinosaursList.appendChild(ol);
+        document.dispatchEvent(new Event('render-complete'));
         return dinosaursList.outerHTML;
-    }
-
-    initLazyLoad() {
-        const config = { childList: true, subtree: true };
-        const observer = new MutationObserver((mutationsList, observer) => {
-            for(let mutation of mutationsList) {
-                if (mutation.type === 'childList') {
-                    this.lazyLoadImages();
-                    observer.disconnect(); // Disconnect the observer after the first batch of images is loaded
-                    break;
-                }
-            }
-        });
-        observer.observe(document.body, config);
-    }
-
-    lazyLoadImages() {
-        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-        if ("IntersectionObserver" in window) {
-            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        let lazyImage = entry.target;
-                        lazyImage.src = lazyImage.dataset.src;
-                        lazyImage.classList.remove("lazy");
-                        lazyImageObserver.unobserve(lazyImage);
-                    }
-                });
-            });
-
-            lazyImages.forEach(function(lazyImage) {
-                lazyImageObserver.observe(lazyImage);
-            });
-        } else {
-            lazyImages.forEach(function(lazyImage) {
-                lazyImage.src = lazyImage.dataset.src;
-                lazyImage.classList.remove("lazy");
-            });
-        }
     }
 }
