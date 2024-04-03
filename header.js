@@ -61,6 +61,9 @@ function changementPage(){
 }
 
 function appliquerFondu() {
+    if(window.location.hash === '#/' || window.location.hash === '' && window.scrollY > 100){
+        window.location.href = '#/dinosaurs';
+    }
     if (!fonduApplique && window.scrollY > 100) { // Appliquer le fondu si on a défilé de plus de 100 pixels
         fonduHeader();
         fonduApplique = true; // Marquer que le fondu a été appliqué
