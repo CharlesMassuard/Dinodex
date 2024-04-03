@@ -1,31 +1,49 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Dinodex</title>
+        <link rel="icon" type="image/png" href="static/img/dodo.ico" />
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta charset="utf-8">
+        <script type="module" src="app.js"></script>
+        <script src="header.js"></script>
+        <script type="module" src="search.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div id="menu">
+            <div id="menu-bar">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#/dinosaurs">Dinosaures</a></li>
+                <li><a href="#/nourritures">Nourritures</a></li>
+                <li><a href="#/favoris">Favoris</a></li>
+                <li><a href="#/persos">Armures</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+        <div class="menu-bg" id="menu-bg"></div>
         <header>
-            <h1>Dinodex</h1>
-            <nav>
-                <a href="#acceuil">Acceuil</a>
-                <a href="#dinosaures">Dinosaures</a>
-                <a href="#nourritures">Nourritures</a>
-            </nav>
+            <div class="overlay">
+                <h1 id="titre">DINODEX</h1>
+                <h3 id="descSite">Le site des dinos-références</h3>
+                <br>
+                <button id="seeMore">Voir Plus</button>
+            </div>
         </header>
-        <div id="acceuil">
-            <h2>Acceuil</h2>
-            <p>Bienvenue sur Dinodex, le site de référence pour tout savoir sur les dinosaures et leur nourriture du jeu ARK SURVIVAL.</p>
-            <h3>Recherche</h3>
-            <!-- Ajouter ici une barre de recherche et/ou des combo-boxs -->
+        <div id="searchBar">
+          <input type="text" id="search" placeholder="Rechercher">
+          <i class="material-icons" id="loupe">search</i>
         </div>
-        <div id="dinosaures">
-            <h2>Dinosaures</h2>
+        <div id="content">    
         </div>
-        <div id="nourritures"></div>
-            <h2>Nourritures</h2>
-        <footer>
-            <p>© 2024 Dinodex</p>
-            <p>Réalisé par LUDMANN Dorian et Massuard Charles</p>
-        </footer>
     </body>
 </html>
