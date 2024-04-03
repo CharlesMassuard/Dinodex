@@ -30,7 +30,7 @@ export default class DinosaurShow {
         if(!dinoSuivant){
             dinoSuivant = 1
         } else {
-            dinoSuivant = dinosaur.id + 1
+            dinoSuivant = parseInt(dinosaur.id) + 1;
         }
         let dinoPrecedent = await DinosaursProvider.getDinosaur(parseInt(dinosaur.id) - 1);
         if(!dinoPrecedent){
@@ -117,8 +117,8 @@ export default class DinosaurShow {
                     </div>
                 </div>
                 <div class="centeredSection buttonChangementDino">
-                    <input type="button" id="buttonFavoris" class="changementDino" value="Dinosaure Précédent" onclick="window.location.href = '#/dinosaurs/${dinoPrecedent}'">
-                    <input type="button" id="buttonFavoris" class="changementDino" value="Dinosaure Suivant" onclick="window.location.href = '#/dinosaurs/${dinoSuivant}'">
+                    <input type="button" id="buttonFavoris" class="changementDino" value="Dino Précédent" onclick="window.location.href = '#/dinosaurs/${dinoPrecedent}'">
+                    <input type="button" id="buttonFavoris" class="changementDino" value="Dino Suivant" onclick="window.location.href = '#/dinosaurs/${dinoSuivant}'">
                 </div>
             </div>
         `;
