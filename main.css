@@ -270,3 +270,12 @@ figure {
   cursor: pointer;
 }
 
+.buttonChangementDino {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.changementDino{
+  font-weight: bold;
+}
