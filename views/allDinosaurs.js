@@ -9,6 +9,13 @@ export default class AllDinosaurs {
         let dinosaurs = await DinosaursProvider.fetchDinosaurs();
         let ol = document.createElement("ol");
 
+        let dinosAmeliores = localStorage.getItem("dinosAmeliores");
+        if(dinosAmeliores){
+            dinosAmeliores = JSON.parse(dinosAmeliores);
+        } else {
+            dinosAmeliores = [];
+        }
+
         dinosaurs.forEach(dinosaur => {
             let li = document.createElement("li");
             let dinosAmeliores = localStorage.getItem("dinosAmeliores");
@@ -18,13 +25,11 @@ export default class AllDinosaurs {
                 dinosAmeliores = [];
             }
             let isAmeliore = false;
-            for (let i = 0; i < dinosAmeliores.length; i++) {
-                let dinosaurId = parseInt(dinosaur.id);
-                if (dinosAmeliores[i] === dinosaurId) {
-                    dinosaur.image = dinosaur.tekImage;
-                    dinosaur.nom = "TEK " + dinosaur.nom;
-                    isAmeliore = true;
-                }
+            let dinosaurId = parseInt(dinosaur.id);
+            if (dinosAmeliores.includes(dinosaurId)) {
+                dinosaur.image = dinosaur.tekImage;
+                dinosaur.nom = "TEK " + dinosaur.nom;
+                isAmeliore = true;
             }
                 li.innerHTML = `
                 <a href="#/dinosaurs/${dinosaur.id}">

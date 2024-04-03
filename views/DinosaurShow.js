@@ -26,6 +26,18 @@ export default class DinosaurShow {
         }
 
         document.title = "Dinodex | " + dinosaur.nom;
+        let dinoSuivant = await DinosaursProvider.getDinosaur(parseInt(dinosaur.id) + 1);
+        if(!dinoSuivant){
+            dinoSuivant = 1
+        } else {
+            dinoSuivant = parseInt(dinosaur.id) + 1;
+        }
+        let dinoPrecedent = await DinosaursProvider.getDinosaur(parseInt(dinosaur.id) - 1);
+        if(!dinoPrecedent){
+            dinoPrecedent = await DinosaursProvider.fetchDinosaurs();
+            dinoPrecedent = dinoPrecedent[dinoPrecedent.length - 1];
+        }
+        dinoPrecedent = dinoPrecedent.id;
 
         let foodsDino = dinosaur.food;
         let allFoods = await NourritureProvider.fetchFoods();
@@ -103,6 +115,10 @@ export default class DinosaurShow {
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div class="centeredSection buttonChangementDino">
+                    <input type="button" id="buttonFavoris" class="changementDino" value="Dino Précédent" onclick="window.location.href = '#/dinosaurs/${dinoPrecedent}'">
+                    <input type="button" id="buttonFavoris" class="changementDino" value="Dino Suivant" onclick="window.location.href = '#/dinosaurs/${dinoSuivant}'">
                 </div>
             </div>
         `;
