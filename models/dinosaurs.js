@@ -4,7 +4,7 @@ export default class Dinosaurs{
         this.id = id
         this.nom = nom
         this.type = type
-        this.tameable = tamable
+        this.tameable = tameable
         this.nourriture = nourriture
         this.image = image
     }

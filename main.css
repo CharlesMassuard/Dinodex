@@ -2,63 +2,271 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('/static/img/backgroundASA.png');
+    background-attachment: fixed;
+}
 
+body::after {
+  content: "";
+  background: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+#buttonFavoris {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  font-size: normal;
+  width: 150px;
+  height: auto;
+  margin-top: -20px;
+}
+#buttonFavoris:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+#buttonDeleteFavoris{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  font-size: normal;
+  width: 200px;
+  height: auto;
+  margin-top: -20px;
+  margin-left: 1vw;
+  font-weight: bold;
+}
+#buttonDeleteFavoris:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+#buttonGetAmelioration {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  font-size: normal;
+  width: 250px;
+  height: auto;
+  margin-top: -20px;
+  margin-left: 1vw;
+  font-weight: bold;
+}
+#buttonGetAmelioration:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+
+a{
+    text-decoration: none;
 }
 
 header{
     position: sticky;
     top: 0;
-    background-color: green;
     border: thin solid black;
+    z-index: 1;
 }
 
-
-#dinosaurs {
+#listView{
     list-style: none;
     padding: 0;
-    width: 90vw;
-    margin: auto;
+    margin-top: 100px;
 }
 
-#dinosaurs > h2{
+#listView > h2{
     text-align: center;
     font-size: 2em;
     margin: 20px 0;
 
 }
 
-#dinosaurs ol {
+#listView ol {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     list-style-type: none;
 }
 
-#dinosaurs li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
+#noFavoris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    flex-direction: column;
+    height: calc(100vh - 80px);
 }
 
-#dinosaurs li:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+#showItem{
+    margin-top: 100px;
 }
 
-#dinosaurs li img {
-    width: 100%;
-    height: auto;
+#lineItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 5vw;
 }
 
-#dinosaurs li h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
+#descItem {
+  background-color: black;
+  color: white;
+  border-radius: 50px; 
+  padding: 20px;
+  margin-right: 5vw;
+  font-size: large;
+  width: 50vw;
 }
 
-#dinosaurs li p {
-    margin: 0;
+#imgItem {
+  width: 30vw;
+  height: auto;
 }
+
+#centeredSection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  flex-direction: row
+}
+
+.tableContainer {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#centeredSection > .tableContainer > table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+#centeredSection table img {
+  width: 100px;
+  height: auto;
+}
+
+table tr {
+  border-bottom: 1px solid black;
+}
+
+.tableContainer table td {
+  border-left: 1px solid black;
+}
+
+/* CARTES */
+
+figure {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+  figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,#0009);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+  }
+  figure:hover figcaption{
+    --_i: 0%;
+  }
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+     -webkit-mask: none;
+     color: #fff;
+    }
+  }
+
+  /* IMAGES PERSOS */
+
+  #personnages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    flex-wrap: nowrap;
+  }
+
+#imgPrincipal {
+  height: 60vh;
+  width: auto;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#imgList {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 500px;
+  scrollbar-width: none; /* Pour Firefox */
+}
+
+#stats {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  margin-top: 50px;
+  flex-grow: 1;
+  width: 20vw;
+}
+
+#imgList img {
+  height: 15vh;
+  width: auto;
+  margin: 10px;
+}
+
+#imgList img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+

@@ -6,39 +6,58 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "raptor.jpg"
+            "kibble": 7,
+            "image": "./static/img/dinos/raptor.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/raptorTek.png",
+            "description": "Le Raptor est un dinosaure rapide et agile qui est capable de sauter de grandes distances. Il est également capable de se faufiler derrière sa proie pour l'attaquer par surprise. Il est très utile pour la chasse et la collecte de ressources."
         },
         {
             "id": 2,
-            "nom": "T-Rex",
+            "nom": "Rex",
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "trex.jpg"
+            "kibble": 10,
+            "image": "./static/img/dinos/rex.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/rexTek.png",
+            "description": "Le T-Rex est un dinosaure redoutable qui est capable de tuer la plupart des autres dinosaures en un seul coup. Il est également capable de détruire les structures en bois et en pierre. Il est très utile pour la chasse et la défense de votre base."
         },
         {
             "id": 3,
             "nom": "Stegosaurus",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "stegosaurus.jpg"
+            "food": [4, 5],
+            "kibble": 8,
+            "image": "./static/img/dinos/stego.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/stegoTek.png",
+            "description": "Le Stegosaurus est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à ses plaques osseuses et sa queue épineuse. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 4,
             "nom": "Triceratops",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "triceratops.jpg"
+            "food": [4, 5],
+            "kibble": 7,
+            "image": "./static/img/dinos/trike.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/trikeTek.png",
+            "description": "Le Triceratrops est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à ses cornes et sa frappe puissante. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 5,
             "nom": "Dodo",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "dodo.jpg"
+            "food": [4, 5],
+            "kibble": 6,
+            "image": "./static/img/dinos/dodo.png",
+            "tekVariant": false,
+            "description": "Le Dodo est un dinosaure herbivore qui est incapable de se défendre contre les prédateurs. Il est cependant capable de collecter de grandes quantités de baies et de légumes. Il est très utile pour la collecte de ressources et la production de kibbles."
         },
         {
             "id": 6,
@@ -46,15 +65,22 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "pteranodon.jpg"
+            "kibble": 8,
+            "image": "./static/img/dinos/ptera.png",
+            "tekVariant": false,
+            "description": "Le Pteranodon est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
             "id": 7,
             "nom": "Parasaur",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "parasaur.jpg"
+            "food": [4, 5],
+            "kibble": 6,
+            "image": "./static/img/dinos/para.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/paraTek.png",
+            "description": "Le Parasaur est un dinosaure herbivore qui est capable de détecter les prédateurs à proximité grâce à son cri d'alarme. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 8,
@@ -62,7 +88,10 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "sarco.jpg"
+            "kibble": 8,
+            "image": "./static/img/dinos/sarco.png",
+            "tekVariant": false,
+            "description": "Le Sarco est un dinosaure amphibie qui est capable de nager rapidement et d'attaquer les proies sur terre et dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 9,
@@ -70,23 +99,32 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "spino.jpg"
+            "kibble": 10,
+            "image": "./static/img/dinos/spino.png",
+            "tekVariant": false,
+            "description": "Le Spino est un dinosaure amphibie qui est capable de nager rapidement et d'attaquer les proies sur terre et dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 10,
             "nom": "Bronto",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "bronto.jpg"
+            "food": [4, 5],
+            "kibble": 10,
+            "image": "./static/img/dinos/bronto.png",
+            "tekVariant": false,
+            "description": "Le Bronto est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 11,
             "nom": "Ankylo",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "ankylo.jpg"
+            "food": [4, 5],
+            "kibble": 8,
+            "image": "./static/img/dinos/ankylo.png",
+            "tekVariant": false,
+            "description": "L'Ankylo est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa carapace et sa queue épineuse. Il est également capable de collecter de grandes quantités de métal et de cristal. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 12,
@@ -94,7 +132,10 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "argentavis.jpg"
+            "kibble": 9,
+            "image": "./static/img/dinos/argent.png",
+            "tekVariant": false,
+            "description": "L'Argentavis est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
             "id": 13,
@@ -102,23 +143,32 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "carno.jpg"
+            "kibble": 8,
+            "image": "./static/img/dinos/carno.png",
+            "tekVariant": false,
+            "description": "Le Carno est un dinosaure carnivore qui est capable de courir rapidement et d'attaquer les proies avec sa mâchoire puissante. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 14,
-            "nom": "Dilo",
+            "nom": "Dilophosaure",
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "dilo.jpg"
+            "kibble": 6,
+            "image": "./static/img/dinos/dilo.png",
+            "tekVariant": false,
+            "description": "Le Dilophosaure est un dinosaure carnivore qui est capable de cracher du venin sur ses proies pour les aveugler. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 15,
             "nom": "Diplodocus",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "diplodocus.jpg"
+            "food": [4, 5],
+            "kibble": 8,
+            "image": "./static/img/dinos/diplo.png",
+            "tekVariant": false,
+            "description": "Le Diplodocus est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 16,
@@ -126,15 +176,21 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "giganotosaurus.jpg"
+            "kibble": 10,
+            "image": "./static/img/dinos/gigano.png",
+            "tekVariant": false,
+            "description": "Le Giganotosaurus est un dinosaure carnivore qui est capable de tuer la plupart des autres dinosaures en un seul coup. Il est également capable de détruire les structures en bois et en pierre. Il est très utile pour la chasse et la défense de votre base."
         },
         {
             "id": 17,
-            "nom": "Mammoth",
+            "nom": "Mammouth",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "mammoth.jpg"
+            "food": [4, 5],
+            "kibble": 9,
+            "image": "./static/img/dinos/mammouth.png",
+            "tekVariant": false,
+            "description": "Le Mammouth est un dinosaure herbivore qui est capable de se défendre contre les prédateurs grâce à sa taille et sa force. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour la collecte de ressources et la défense de votre base."
         },
         {
             "id": 18,
@@ -142,23 +198,33 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "megalodon.jpg"
+            "kibble": 9,
+            "image": "./static/img/dinos/megalodon.png",
+            "tekVariant": false,
+            "description": "Le Megalodon est un dinosaure marin qui est capable de nager rapidement et d'attaquer les proies dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 19,
-            "nom": "Plesiosaur",
+            "nom": "Plesiosaure",
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "plesiosaur.jpg"
+            "kibble": 9,
+            "image": "./static/img/dinos/plesio.png",
+            "tekVariant": false,
+            "description": "le Plesiosaure est un dinosaure marin qui est capable de nager rapidement et d'attaquer les proies dans l'eau. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
         },
         {
             "id": 20,
             "nom": "Quetzal",
             "type": "Herbivore",
             "tameable": true,
-            "food": [4, 5, 6],
-            "image": "quetzal.jpg"
+            "food": [4, 5],
+            "kibble": 9,
+            "image": "./static/img/dinos/quetzal.png",
+            "tekVariant": true,
+            "tekImage": "./static/img/dinos/quetzalTek.png",
+            "description": "Le Quetzal est un dinosaure volant qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de bois et de pierre. Il est très utile pour l'exploration et le transport de ressources."
         },
         {
             "id": 21,
@@ -166,7 +232,21 @@
             "type": "Carnivore",
             "tameable": true,
             "food": [1, 2, 3],
-            "image": "sabertooth.jpg"
+            "kibble": 8,
+            "image": "./static/img/dinos/saber.png",
+            "tekVariant": false,
+            "description": "Le Sabertooth est un dinosaure carnivore qui est capable de courir rapidement et d'attaquer les proies avec ses griffes acérées. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour la chasse et l'exploration."
+        },
+        {
+            "id": 22,
+            "nom": "Griffon",
+            "type": "Carnivore",
+            "tameable": true,
+            "food": [1, 2, 3],
+            "kibble": 11,
+            "image": "./static/img/dinos/griffon.png",
+            "tekVariant": false,
+            "description": "Le Griffon est une créature volante qui est capable de transporter des joueurs et des dinosaures sur de longues distances. Il est également capable de collecter de grandes quantités de viande crue. Il est très utile pour l'exploration et le transport de ressources."
         }
     ],
 
@@ -175,37 +255,176 @@
             "id": 1,
             "nom": "Viande crue",
             "type": "Carnivore",
-            "image": "viande_crue.jpg"
+            "image": "https://ark.wiki.gg/images/e/e9/Raw_Meat.png",
+            "desc": "La viande crue est une nourriture de base pour les dinosaures carnivores. Elle peut être obtenue en tuant des dinosaures ou en les découpant avec un outil tranchant."
         },
         {
             "id": 2,
             "nom": "Viande cuite",
             "type": "Carnivore",
-            "image": "viande_cuite.jpg"
+            "image": "https://ark.wiki.gg/images/c/cd/Cooked_Meat.png",
+            "desc": "La viande cuite est une nourriture de base pour les dinosaures carnivores. Elle peut être obtenue en cuisant de la viande crue dans un feu de camp ou un four industriel."
         },
         {
             "id": 3,
             "nom": "Viande prime",
             "type": "Carnivore",
-            "image": "viande_prime.jpg"
+            "image": "https://ark.wiki.gg/images/0/09/Raw_Prime_Meat.png",
+            "desc": "La viande prime est une nourriture de qualité supérieure pour les dinosaures carnivores. Elle peut être obtenue en tuant des dinosaures particuliers"
         },
         {
             "id": 4,
             "nom": "Baies",
             "type": "Herbivore",
-            "image": "baies.jpg"
+            "image": "https://ark.wiki.gg/images/2/24/Berries.png",
+            "desc": "Les baies sont une nourriture de base pour les dinosaures herbivores. Elles peuvent être obtenues en récoltant des buissons avec les mains, ou un dinosaure herbivore."
         },
         {
             "id": 5,
             "nom": "Légumes",
             "type": "Herbivore",
-            "image": "legumes.jpg"
+            "image": "https://i.pinimg.com/originals/2d/12/62/2d126273e7ae2c7db2b389c8528875ed.png",
+            "desc": "Les légumes sont une nourriture de qualité supérieure pour les dinosaures herbivores. Ils peuvent être obtenus en cultivant des plantes dans une serre."
         },
         {
             "id": 6,
-            "nom": "Kibbles",
-            "type": "Herbivore",
-            "image": "kibble.jpg"
+            "nom": "Basic Kibble",
+            "type": "Omnivore",
+            "image": "https://ark.wiki.gg/images/8/80/Basic_Kibble.png",
+            "desc": "Le Basic Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de toute petite taille"
+        },
+        {
+            "id": 7,
+            "nom": "Simple Kibble",
+            "type": "Omnivore",
+            "image": "https://ark.wiki.gg/images/d/db/Simple_Kibble.png",
+            "desc": "Le Simple Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de petite taille"
+        },
+        {
+            "id": 8,
+            "nom": "Regular Kibble",
+            "type": "Omnivore",
+            "image": "https://ark.wiki.gg/images/8/81/Regular_Kibble.png",
+            "desc": "Le Regular Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de taille moyenne"
+        },
+        {
+            "id": 9,
+            "nom": "Superior Kibble",
+            "type": "Omnivore",
+            "image": "https://ark.wiki.gg/images/b/bc/Superior_Kibble.png",
+            "desc": "Le Superior Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de grande taille"
+        },
+        {
+            "id": 10,
+            "nom": "Exceptional Kibble",
+            "type": "Omnivore",
+            "image": "https://ark.wiki.gg/images/1/12/Exceptional_Kibble.png",
+            "desc": "L'Exceptional Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs de très grande taille"
+        },
+        {
+            "id": 11,
+            "nom": "Extraordinary Kibble",
+            "type": "Omnivore",
+            "image": "https://ark.wiki.gg/images/a/a3/Extraordinary_Kibble.png",
+            "desc": "L'Extraordinary Kibble est une nourriture de qualité supérieure pour les dinosaures omnivores. Elle peut être fabriquée à partir d'œufs spéciaux"
+        }
+    ],
+    "armures" : [
+        {
+            "id": 1,
+            "nom": "Sans armure",
+            "armure": 0,
+            "resistanceFroid": 0,
+            "resistanceChaud": 0,
+            "image": "./static/img/persos/persoBase.png"
+        },
+        {
+            "id": 2,
+            "nom": "Vêtements en tissu",
+            "armure": 50.0,
+            "resistanceFroid": 33,
+            "resistanceChaud": 84,
+            "image": "./static/img/persos/tissu.png"
+        },
+        {
+            "id": 3,
+            "nom": "Vêtements en cuir",
+            "armure": 100.0,
+            "resistanceFroid": 95,
+            "resistanceChaud": -28,
+            "image": "./static/img/persos/cuir.png"
+        },
+        {
+            "id": 4,
+            "nom": "Armure en fourrure",
+            "armure": 200.0,
+            "resistanceFroid": 281,
+            "resistanceChaud": -118,
+            "image": "./static/img/persos/fourrure.png"
+        },
+        {
+            "id": 5,
+            "nom": "Vêtements du desert",
+            "armure": 200.0,
+            "resistanceFroid": 34,
+            "resistanceChaud": 146,
+            "image": "./static/img/persos/desert.png"
+        },
+        {
+            "id": 6,
+            "nom": "Tenue de camouflage",
+            "armure": 160.0,
+            "resistanceFroid": 27,
+            "resistanceChaud": 174,
+            "image": "./static/img/persos/camouflage.png"
+        },
+        {
+            "id": 7,
+            "nom": "Armure en chitine",
+            "armure": 250.0,
+            "resistanceFroid": 45,
+            "resistanceChaud": -28,
+            "image": "./static/img/persos/chitine.png"
+        },
+        {
+            "id": 8,
+            "nom": "Armure en métal",
+            "armure": 500.0,
+            "resistanceFroid": 67,
+            "resistanceChaud": -28,
+            "image": "./static/img/persos/flak.png"
+        },
+        {
+            "id": 9,
+            "nom": "Tenue anti-radiation",
+            "armure": 325.0,
+            "resistanceFroid": 56,
+            "resistanceChaud": 1462,
+            "image": "./static/img/persos/antiRad.png"
+        },
+        {
+            "id": 10,
+            "nom": "Tenue de plongée",
+            "armure": 5.0,
+            "resistanceFroid": 78,
+            "resistanceChaud": -16,
+            "image": "./static/img/persos/scuba.png"
+        },
+        {
+            "id": 11,
+            "nom": "Tenue anti-émeute",
+            "armure": 575.0,
+            "resistanceFroid": 67,
+            "resistanceChaud": -56,
+            "image": "./static/img/persos/antiEmeute.png"
+        },
+        {
+            "id": 12,
+            "nom": "Armure TEK",
+            "armure": 900.0,
+            "resistanceFroid": 61,
+            "resistanceChaud": 9,
+            "image": "./static/img/persos/tekArmor.png"
         }
     ]
 }

@@ -1,0 +1,199 @@
+header {
+  background: url('https://getwallpapers.com/wallpaper/full/4/6/6/1132666-ark-survival-evolved-wallpapers-1920x1080-for-samsung-galaxy.jpg');
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+header .overlay{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#titre{
+  font-size: 5vw;
+  font-weight: bold;
+  transition: margin-top 1.5s, margin-bottom 1.5s, 0.5s ease;
+}
+
+#titre:hover {
+  letter-spacing: 10px;
+  transform: scale(1.3);
+}
+
+#descSite{
+  font-size: 2vw;
+  margin-top: -40px;
+  font-weight: bold;
+}
+
+#seeMore {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  font-size: large;
+  width: 150px;
+  height: auto;
+  margin-top: -20px;
+}
+#seeMore:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+/**SEARCH BAR**/
+
+#searchBar {
+  position: fixed;
+  top: 30px;
+  right: 0;
+  z-index: 9999;
+  margin-right: 1vw;
+}
+
+#searchBar input {
+  height: 3vh;
+  border-radius: 50px;
+  border: none;
+  padding: 0 20px;
+  font-size: 1em;
+  outline: none;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+.material-icons {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.material-icons:hover {
+  cursor: pointer;
+}
+
+
+
+/**HAMBURGER MENU*/
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+  z-index: 1000;
+}
+
+#bar3 {
+  transform: translateY(4px);
+  z-index: 1000;
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+  z-index: 1000;
+}
+
+.nav ul {
+  padding: 0 22px;
+  z-index: 1000;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+  z-index: 1000;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0), -2px -2px 2px rgb(0, 0, 0), 2px -2px 2px rgb(0, 0, 0), -2px 2px 2px rgb(0, 0, 0);
+  z-index: 1000;
+}
+
+.nav li a:hover {
+  display: block;
+  font-weight: bold;
+  z-index: 1000;
+  transform: scale(1.03);
+}
+
+#menu {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu-bg {
+  width: 0;
+  height: 0;
+  background: url("https://w0.peakpx.com/wallpaper/178/906/HD-wallpaper-ark-2-game-2021.jpg");
+  background-position: left 400%;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 610px;
+  transform: translate(-60%,-30%);
+}

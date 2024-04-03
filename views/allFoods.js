@@ -2,16 +2,24 @@ import FoodProvider from "../services/nourritureProvider.js";
 
 export default class AllFoods {
     async render() {
-        let foodList = document.querySelector("#nourritures");
+        document.title = "Dinodex | Nourritures";
+        let foodList = document.createElement("div");
+        foodList.setAttribute("id", "listView");
         let foods = await FoodProvider.fetchFoods();
+        let ol = document.createElement("ol");
         foods.forEach(food => {
             let li = document.createElement("li");
             li.innerHTML = `
-                <a href="#nourritures/${food.id}">
-                    <h2>${food.nom}</h2>
+                <a href="#/nourritures/${food.id}">
+                    <figure>
+                        <img src="${food.image}" alt="${food.nom}">
+                        <figcaption>"${food.nom}"</figcaption>
+                    </figure>
                 </a>
             `;
-            foodList.appendChild(li);
+            ol.appendChild(li);
         });
+        foodList.appendChild(ol);
+        return foodList.outerHTML;
     }
 }
