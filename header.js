@@ -116,9 +116,9 @@ document.querySelector('header').addEventListener('click', function() {
 });
 
 document.getElementById('seeMore').addEventListener('click', function(event) {
-  event.stopPropagation();
-  fonduHeader();
-  window.scrollTo(0, 0);
+    event.stopPropagation();
+    fonduHeader();
+    window.location.href = '#/dinosaurs';
 });
 
 document.addEventListener('DOMContentLoaded', function() {
