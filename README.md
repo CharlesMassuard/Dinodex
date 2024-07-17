@@ -1,6 +1,6 @@
-# DinosDex par Massuard Charles et Ludmann Dorian
+# DinoDex par Massuard Charles et Ludmann Dorian
 
-DinoDex est une application web de type single page qui utilise JavaScript afin de donner rendre la naviguation de l'application en une vraie expérience visuelle. Sur DinoDex, retrouvez toutes les informations sur les dinosaures de ARK: Survival Evolved.  
+DinoDex est une application web de type single page qui utilise JavaScript afin de rendre la naviguation de l'application en une vraie expérience visuelle. Sur DinoDex, retrouvez toutes les informations sur les dinosaures de ARK: Survival Evolved.  
 
 ## Requirements
 
@@ -24,9 +24,6 @@ python -m http.server
 - Barre de recherche
 - Lazy loading
 
-## Explication de code
-# README
-
 ## Lancement du serveur
 
 Pour lancer le serveur, utilisez la commande suivante :
@@ -35,18 +32,6 @@ Pour lancer le serveur, utilisez la commande suivante :
 python -m http.server
 ```
 
-## Fonctionnalités
-
-- Plusieurs vues:
-    - Listing
-    - Détail des dinosaures et évolutions 
-    - Gestion des favoris en local
-- Pagination  
-- JSON relationnel avec des relations diverses et variées  
-- Barre de recherche
-- Lazy loading
-
-## Explication de code
 ### Modèles
 
 - `dinosaurs.js` : Ce fichier contient le modèle pour les dinosaures.
