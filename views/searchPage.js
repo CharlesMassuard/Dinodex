@@ -62,7 +62,7 @@ export default class SearchPage {
                 resultatsFoods.forEach(food => {
                     let li = document.createElement("li");
                     li.innerHTML = `
-                        <a href="#/foods/${food.id}">
+                        <a href="#/nourritures/${food.id}">
                             <figure>
                                 <img src="${food.image}" alt="${food.nom}">
                                 <figcaption>"${food.nom}"</figcaption>
