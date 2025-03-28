@@ -1,4 +1,4 @@
-const dinosaurs = require("../dinosaurs.json");
+const dinosaurs = require("../../dinosaurs.json");
 
 exports.handler = async (event, context) => {
     return {
