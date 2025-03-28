@@ -2,9 +2,9 @@ export default class FoodProvider{
 
     static fetchFoods = async () => {
         try {
-            const response = await fetch("http://localhost:3000/nourritures");
+            const response = await fetch("/.netlify/functions/dinosaurs");
             const json = await response.json();
-            return json;
+            return json.nourritures;
         } catch (error) {
             console.error('Error fetching foods', error);
         }
@@ -12,7 +12,7 @@ export default class FoodProvider{
 
     static postFood = async (food) => {
         try {
-            const response = await fetch("http://localhost:3000/nourritures", {
+            const response = await fetch("/.netlify/functions/dinosaurs", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8',
@@ -20,7 +20,7 @@ export default class FoodProvider{
                 body: JSON.stringify(food),
             });
             const json = await response.json();
-            return json;
+            return json.nourritures;
         } catch (error) {
             console.error('Error posting food', error);
         }
@@ -28,7 +28,7 @@ export default class FoodProvider{
 
     static getFood = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3000/nourritures/${id}`);
+            const response = await fetch(`/.netlify/functions/dinosaurs/${id}`);
             const json = await response.json();
             return json;
         } catch (error) {
