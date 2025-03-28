@@ -26,7 +26,7 @@ export default class FoodProvider{
         }
     }
 
-    static fetchFoods = async () => {
+    static fetchFoods = async (id) => {
         try {
             const response = await fetch(`/.netlify/functions/nourritures/${id}`);
             const json = await response.json();
