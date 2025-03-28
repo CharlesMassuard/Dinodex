@@ -20,6 +20,7 @@ export default class DinosaursProvider{
                 body: JSON.stringify(dinosaur),
             });
             const json = await response.json();
+            console.log("Dinosaur posted successfully", json);
             return json;
         } catch (error) {
             console.error('Error posting dinosaur', error);
