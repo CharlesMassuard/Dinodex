@@ -4,6 +4,7 @@ export default class DinosaursProvider{
         try {
             const response = await fetch("/.netlify/functions/dinosaurs");
             const json = await response.json();
+            console.log("Dinosaurs fetched successfully", json);
             return json;
         } catch (error) {
             console.error('Error fetching dinosaurs', error);
