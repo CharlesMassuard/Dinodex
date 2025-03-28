@@ -40,7 +40,6 @@ export default class DinosaurShow {
         dinoPrecedent = dinoPrecedent.id;
 
         let foodsDino = dinosaur.food;
-        console.log(foodsDino);
         let allFoods = await NourritureProvider.fetchFoods();
         let foods = [];
         foodsDino.forEach(food => {

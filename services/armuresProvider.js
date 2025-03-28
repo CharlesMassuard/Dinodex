@@ -2,9 +2,9 @@ export default class ArmuresProvider{
 
     static fetchArmures = async () => {
         try {
-            const response = await fetch("/.netlify/functions/dinosaurs");
+            const response = await fetch("/.netlify/functions/armures");
             const json = await response.json();
-            return json.armures;
+            return json;
         } catch (error) {
             console.error('Error fetching Armures', error);
         }
@@ -12,7 +12,7 @@ export default class ArmuresProvider{
 
     static postArmure = async (Armure) => {
         try {
-            const response = await fetch("/.netlify/functions/dinosaurs", {
+            const response = await fetch("/.netlify/functions/armures", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8',
@@ -20,7 +20,7 @@ export default class ArmuresProvider{
                 body: JSON.stringify(Armure),
             });
             const json = await response.json();
-            return json.armures;
+            return json;
         } catch (error) {
             console.error('Error posting Armure', error);
         }
@@ -28,7 +28,7 @@ export default class ArmuresProvider{
 
     static getArmure = async (id) => {
         try {
-            const response = await fetch(`/.netlify/functions/dinosaurs/${id}`);
+            const response = await fetch(`/.netlify/functions/armures${id}`);
             const json = await response.json();
             return json;
         } catch (error) {
